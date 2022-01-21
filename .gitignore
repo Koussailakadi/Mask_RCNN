@@ -1,0 +1,6 @@
+# gitignore all
+
+# trained model: 
+*.h5
+
+ mask_rcnn_coco.h5
