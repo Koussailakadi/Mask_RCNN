@@ -11,7 +11,7 @@ mask_rcnn_coco.h5
 Train_Mask_RCNN_local.ipynb
 
 # annotations:
-*.jason
+*.json
 
 # dataset:
 *.zip
