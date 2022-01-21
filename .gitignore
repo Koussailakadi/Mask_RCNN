@@ -3,4 +3,15 @@
 # trained model: 
 *.h5
 
- mask_rcnn_coco.h5
+# weights MS COCO: 
+mask_rcnn_coco.h5
+
+# local train model notebook:
+Train_Mask_RCNN_local.ipynb
+
+# annotations:
+*.jason
+
+# dataset:
+*.zip
+/dataset
