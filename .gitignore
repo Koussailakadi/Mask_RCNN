@@ -1,4 +1,5 @@
 # gitignore all
+/__pycache__
 
 # trained model: 
 *.h5
