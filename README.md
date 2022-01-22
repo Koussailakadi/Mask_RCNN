@@ -12,14 +12,15 @@ train : 80% of the dataset
 validation : 10% of the dataset
 test: 10% of the dataset 
 
-dataset exameple: 
-![alt text](http://img.png)
-
+dataset example: 
+![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/train_images.png)
 
 ## Demo:  
-
+the test image: 
+![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/test_image.png)
  
-
+the prediction:
+![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/prediction.png)
 
 
 
