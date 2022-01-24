@@ -3,7 +3,7 @@ The aim of this work is to use the mask RCNN neural network architecture for ima
 
 ## Train model:  GPU is required for training
 to use this model, you just have to open the Jupyter notebook file : 
-[click here](https://github.com/Koussailakadi/Mask_RCNN/blob/main/Train_Demo_MaskRCNN_Cracks_Segmentation.ipynb) on google colab or jupyter notebook and load your data (all the dataset in one  zip file, and the annotations in Json, or coco Json format)
+[click here](https://github.com/Koussailakadi/Mask_RCNN/blob/main/Train_Demo_Mask_RCNN.ipynb) on google colab or jupyter notebook and load your data (all the dataset in one  zip file, and the annotations in Json, or coco Json format)
 
 ## Inference model: 
 to use this model, you just have to open the Jupyter notebook file : 
