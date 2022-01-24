@@ -1,10 +1,13 @@
-# MASK RCNN:
+# MASK RCNN Architecture (Costum):
 The aim of this work is to use the mask RCNN neural network architecture for image segmentation. 
 
-## Run: 
+## Train model:  GPU is required for training
 to use this model, you just have to open the Jupyter notebook file : 
-[click here](https://github.com/Koussailakadi/Mask_RCNN/blob/main/Train_Demo_MaskRCNN_Cracks_Segmentation.ipynb) on google colab and load your data (all the dataset in one  zip file, and the annotations in Json, or coco Json format)
+[click here](https://github.com/Koussailakadi/Mask_RCNN/blob/main/Train_Demo_MaskRCNN_Cracks_Segmentation.ipynb) on google colab or jupyter notebook and load your data (all the dataset in one  zip file, and the annotations in Json, or coco Json format)
 
+## Inference model: 
+to use this model, you just have to open the Jupyter notebook file : 
+[click here](https://github.com/Koussailakadi/Mask_RCNN/blob/main/Inference_Demo_Mask_RCNN.ipynb) on google colab or jupyter notebook and load your data (all the dataset in one  zip file, and the annotations in Json, or coco Json format)
 
 ## Dataset: 
 the split of the dataset is done like the following: 
@@ -15,12 +18,15 @@ test: 10% of the dataset
 dataset example: 
 ![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/train_images.png)
 
-## Demo:  
-the test image: 
-![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/test_image.png)
+## Demo:
+original image:
+![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/original_image.png)
+
+ground truth: 
+![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/ground_truth_image.png)
  
 the prediction:
-![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/prediction.png)
+![alt text](https://github.com/Koussailakadi/Mask_RCNN/blob/main/img/predicted_image.png)
 
 
 
