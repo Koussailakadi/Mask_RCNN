@@ -1,14 +1,16 @@
 # gitignore all
+
+# environnement
+/env
+
+#vscode cach:
+.vscode
+
+# cach
 mrcnn/__pycache__
 
 # trained model: 
 *.h5
-
-# weights MS COCO: 
-mask_rcnn_coco.h5
-
-# local train model notebook:
-Train_Mask_RCNN_local.ipynb
 
 # annotations:
 *.json
@@ -23,3 +25,7 @@ Train_Mask_RCNN_local.ipynb
 
 # load model:
 load_model.py
+
+
+# test folder: 
+/logs
