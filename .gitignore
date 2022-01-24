@@ -16,3 +16,10 @@ Train_Mask_RCNN_local.ipynb
 # dataset:
 *.zip
 /dataset
+
+
+# test folder: 
+/test
+
+# load model:
+load_model.py
