@@ -6,11 +6,17 @@
 #vscode cach:
 .vscode
 
+# images:
+/images
+*.png
+*.bmp
+
 # cach
 mrcnn/__pycache__
 
 # trained model: 
 *.h5
+
 
 # annotations:
 *.json
@@ -23,9 +29,11 @@ mrcnn/__pycache__
 # test folder: 
 /test
 
-# load model:
-load_model.py
-
+# mrcnn TF1:
+/mrcnn_TF1
 
 # test folder: 
 /logs
+
+
+

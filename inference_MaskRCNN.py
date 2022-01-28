@@ -32,18 +32,14 @@ train: 80%
 val: 10%
 test: 10%
 """
-dataset_train = load_image_dataset( annotations_path, "dataset", "train")
-dataset_val = load_image_dataset( annotations_path, "dataset", "val")
+
 dataset_test = load_image_dataset(annotations_path, "dataset", "test")
-class_number = dataset_train.count_classes()
-print('All images :',len(dataset_train.image_ids)+len(dataset_val.image_ids)+len(dataset_test.image_ids))
-print('Train:',len(dataset_train.image_ids))
-print('Validation:',len(dataset_val.image_ids))
+class_number = dataset_test.count_classes()
 print('test: ',len(dataset_test.image_ids))
 print("Classes: {}".format(class_number))
 
 # show dataset samples:
-display_image_samples(dataset_train)
+#display_image_samples(dataset_train)
 
 #---------------------------------------------------
 # ConstumConfiguration:
@@ -81,7 +77,7 @@ class CustomConfig(Config):
 # Load Configuration
 config = CustomConfig()
 config.display()
-
+#model = load_training_model(config)
 
 #---------------------------------------------------
 # Inference and load model weights:
@@ -116,12 +112,17 @@ plt.show()
 # original masks:
 print("Ground Truth")
 visualize.display_instances(original_image, gt_bbox, gt_mask, gt_class_id,
-                                dataset_val.class_names, figsize=(8, 8),show_bbox=False)
+                                dataset_test.class_names, figsize=(8, 8),show_bbox=False)
 
 
 # Model result
 print("Prediction")
 results = model.detect([original_image], verbose=0)
 r = results[0]
-visualize.display_instances(original_image, r['rois'], r['masks'], r['class_ids'],
-                            dataset_test.class_names, r['scores'], ax=get_ax(), show_bbox=False)
+
+masked_image=visualize.display_instances(original_image, r['rois'], r['masks'], r['class_ids'],
+                            dataset_test.class_names, r['scores'], figsize=(8, 8), show_bbox=False,get_image=True)
+
+
+
+
